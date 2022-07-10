@@ -1,16 +1,15 @@
 import './App.css';
+import Header from './Header';
+import Content from './Content';
+import Footer from './Footer';
 
+//that is the functional component
 function App() {
-  const handleNameChange = () => {
-    const names = ['john','doe','james'];
-    const random = Math.floor(Math.random() * 3) ;
-    return names[random]; 
-  } 
-
   return (
     <div className="App">
-        <p>Hello {handleNameChange()}</p>
-      
+        <Header />
+        <Content />
+        <Footer />
     </div> 
   );
 }
